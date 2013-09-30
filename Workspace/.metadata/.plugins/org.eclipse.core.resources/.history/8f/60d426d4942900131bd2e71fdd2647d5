@@ -1,0 +1,6 @@
+package edu.sjsu.cmpe.projectdemo.domain;
+
+public class AllDonors {
+
+	public static ArrayList<Donor> allDonors = new ArrayList<Donor>();
+}
