@@ -1,5 +1,9 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: Jobin
+=======
+Built-By: Shweta
+>>>>>>> ba43f4bedbe31adfd55f9efe660d796254bbe790
 Build-Jdk: 1.8.0-ea
 Created-By: Maven Integration for Eclipse
 

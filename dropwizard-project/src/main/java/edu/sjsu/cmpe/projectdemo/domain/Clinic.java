@@ -2,6 +2,7 @@ package edu.sjsu.cmpe.projectdemo.domain;
 
 public class Clinic {
 
+
 	private String clinicName;
 	private String clinicAddress;
 	
@@ -25,4 +26,5 @@ public class Clinic {
 		this.clinicAddress=clinicAddress;
 	}
 	
+
 }

@@ -12,8 +12,10 @@ public class Donor {
 	private String address;
 	private String location;
 	
+
 	private Login donorLogin;
 
+	
 	public void setDonorName (String donorName){
 		this.donorName = donorName;
 	}
@@ -67,10 +69,12 @@ public class Donor {
 		return this.location;
 	}
 	
+
 	public Login  getDonorLogin () {
 		return this.donorLogin;
 	}
 	
+
 	public void updatePassword (String password){
 		this.donorLogin.setPassword(password);
 	}
