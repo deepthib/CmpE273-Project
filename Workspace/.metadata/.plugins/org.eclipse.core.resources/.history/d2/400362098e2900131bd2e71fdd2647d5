@@ -1,0 +1,8 @@
+package edu.sjsu.cmpe.projectdemo.domain;
+
+public class Clinic {
+
+	private String donorName;
+	private String userName;
+	private String password;
+}

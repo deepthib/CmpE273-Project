@@ -1,0 +1,52 @@
+package edu.sjsu.cmpe.projectdemo.api.resources;
+
+import javax.validation.Valid;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
+import org.joda.time.DateTime;
+
+import com.yammer.metrics.annotation.Timed;
+
+import edu.sjsu.cmpe.projectdemo.domain.Donor;
+
+public class PortalResource {
+
+	public PortalResource (){
+		
+	}
+	
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Path("/")
+    @Timed(name="register-donor")
+    
+    public Response registerNewDonor (@Valid Donor donorInfo){
+    	
+    	String donorName = donorInfo.getDonorName();
+    	DateTime dateOfBirth = donorInfo.getDateOfBirth();
+    	String bloodGroup = donorInfo.getBloodGroup();
+    	String address = donorInfo.getAddress();
+    	long phoneNumber = donorInfo.getPhoneNumber();
+    	String location = donorInfo.getLocation();
+    	String emailID = donorInfo.getEmailID();
+    	
+    	Donor donor = new Donor();
+    	
+    	donor.setAddress(address);
+    	donor.setBloodGroup(bloodGroup);
+    	donor.setDateOfBirth(dateOfBirth);
+    	donor.setDonorName(donorName);
+    	donor.setEmailID(emailID);
+    	donor.setLocation(location);
+    	donor.setPhoneNumber(phoneNumber);
+    	
+    	
+    	
+		return null;
+    	
+    }
+}
